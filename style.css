@@ -1,0 +1,629 @@
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover
+{
+    color: #fff;
+}
+
+ul{
+    list-style: none;
+}
+
+
+#header
+{
+    background-image: url(images/intro-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.layer-header
+{
+    background-color: rgba(0, 0, 0, .6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h1
+{
+    font-size: 4.5rem;
+}
+
+#header .typo-pragrapgh::after
+{   
+    content: "P|";
+    font-size: 3.5rem;
+    color: #fff;
+    animation: typo-style 2s  ease-in-out  infinite ;
+}
+
+
+@keyframes typo-style
+{
+    0%{
+        content: "ph|";
+    }
+    5%{
+        content: "pho|";
+    }
+    10%{
+        content: "phot|";
+    }
+    15%{
+        content: "photo|";
+    }
+    20%{
+        content: "photog|";
+    }
+    25%{
+        content: "photogr|";
+    }
+    30%{
+        content: "photogra|";
+    }
+    35%{
+        content: "photograh|";
+    }
+    40%{
+        content: "photograhe|";
+    }
+    45%{
+        content: "photograhe|";
+    }
+    50%{
+        content: "photograher|";
+    }
+
+    55%{
+        content: "photograhe|";
+    }
+    60%{
+        content: "photograh|";
+    }
+    65%{
+        content: "photogra|";
+    }
+    70%{
+        content: "photogr|";
+    }
+    75%{
+        content: "photog|";
+    }
+    80%{
+        content: "photo|";
+    }
+    85%{
+        content: "phot|";
+    }
+    90%{
+        content: "pho|";
+    }
+    95%{
+        content: "ph|";
+    }
+    100%{
+        content: "p|";
+    }
+   }
+
+
+/* navbar */
+.nav-link:focus, .nav-link:hover {
+    color: #fff;
+}
+
+.color-white{
+    color: #fff 
+}
+
+.navbar li{
+    position: relative;
+}
+.navbar ul li a::before
+{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    width: 0;
+    height: 3px;
+    border-bottom: 2px solid #fff;
+    visibility: hidden;
+    transition: all .3s ;
+}
+
+.navbar li:hover > a:before{
+    visibility: visible;
+    width: 70%;
+}
+
+.navbar{
+    z-index: 999999999;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+/* navbar */
+
+/* <About> */
+
+.h-after
+{
+    position: relative;
+}
+.h-after::after
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 85%;
+    height: 20px;
+    background-color: #0078ff;
+}
+
+.about-me .after-style::after
+{
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: 100px;
+    border-bottom: 3px solid #0078ff;
+
+}
+
+.h-after::before
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #cde1f8;
+}
+
+.css-after{
+    position: relative;
+}
+
+.css-after::after
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 75%;
+    height: 20px;
+    background-color: #0078ff;
+}
+
+
+.css-after::before
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #cde1f8;
+}
+
+
+
+.p-after{
+    position: relative;
+}
+
+.p-after::after
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 50%;
+    height: 20px;
+    background-color: #0078ff;
+}
+
+
+.p-after::before
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #cde1f8;
+}
+
+
+
+.j-after{
+    position: relative;
+}
+
+.j-after::after
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 90%;
+    height: 20px;
+    background-color: #0078ff;
+}
+
+
+.j-after::before
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #cde1f8;
+}
+
+
+/* </About> *******************************************/
+
+
+.card
+{
+    border-radius: 1.2rem;
+}
+
+
+/* work-complete */
+
+.work-complete
+{
+   background-image: url(images/post-3.jpg);
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+.layer-work-complete
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0078ff;
+    opacity: .7;
+}
+
+.style-icon-comp
+{
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #cde1f8;
+}
+.container-complete{
+    position: relative;
+    z-index: 9999999;
+}
+
+/* <>work-complete </> *************************************************/
+
+/* work */
+
+.img-card-work img
+{
+    transition: transform 1s;
+}
+
+.img-card-work:hover img{
+    transform: scale(1.3);
+}
+.work-category
+{
+    color: #0078ff;
+    font-size: .8rem;
+}
+.date
+{
+    font-size: .8rem;
+}
+.card
+{
+    border-radius: 0;
+}
+.work p
+{
+    position: relative;
+}
+.work .after-style::after
+{
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 20px;
+    
+    border-bottom: 5px solid #0078ff;
+}
+
+/* </work> *************************************/
+
+
+/* testimonial */
+
+
+#testimonial{
+    background-image: url(images/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.testimonial-layer{
+    width: 100%;
+    height: 100%;
+    background-color: #0078ff;
+    opacity: 0.7;
+}
+
+.carousel-indicators [data-bs-target]{
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+}
+
+.testimonial-items
+{
+    max-width: 600px;
+}
+
+/* testimonial ****************************************************/
+
+
+
+
+
+
+/* <blog> */
+
+.card-img-blog-travel{
+    position: relative;
+}
+
+.card-img-blog-travel::after
+{
+    content: "TRAVEL";
+   
+    position: absolute;
+    top: 95%;
+    left:50%;
+    transform: translate(-50%);
+    
+    width: 30%;
+    height:30px;
+    background-color: #0078ff;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    padding: 2px 0;
+    font-size: .7rem;
+}
+
+.card-img-blog-web
+{
+    position: relative;
+}
+
+.card-img-blog-web::after
+{
+    content: "WEB DESIGN";
+   
+    position: absolute;
+    top: 95%;
+    left:50%;
+    transform: translate(-50%);
+    
+    width: 30%;
+    height:30px;
+    background-color: #0078ff;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    padding: 2px 0;
+    font-size: .7rem;
+}
+
+
+.change-color
+{
+    transition: color .5s;
+    color: black;
+}
+
+.change-color:hover 
+{
+    color: #0078ff;
+}
+
+
+.w-10
+{
+    width: 10%;
+}
+#bolg p{
+    position: relative;
+}
+#bolg .after-style::after
+{
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 20px;
+    
+    border-bottom: 5px solid #0078ff;
+}
+
+
+
+/* style icon in section servise */
+
+
+.card-icons{
+   
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #0078ff;
+    transition: all .5s ;
+}
+
+.card-icons:hover
+{
+    background-color: #0078ff;
+    box-shadow: 0 0 0 10px #cde1f8
+}
+.card-icons:hover i {
+    color: #fff;
+}
+
+
+.servise .after-style::after
+{
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 20px;
+    
+    border-bottom: 5px solid #0078ff;
+}
+
+/* style icon in section servise */
+
+
+
+/* form */
+
+.border-raduis-1
+{
+    border-radius: 1.5rem;
+}
+
+
+
+.fa-ul i
+{
+    color: #0078ff;
+}
+
+
+
+.icon{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 0 5px #0078ff;
+    transition: all .5s;
+}
+
+
+.icon:hover{
+    background-color: #0078ff;
+    box-shadow: 0 0 0 5px #cde1f8;
+}
+
+
+
+.icon:hover i{
+    color:#fff;
+}
+
+
+
+
+.bg-img{
+    background-image: url(images/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.layer-blue
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0078ff;
+    opacity: .7;
+    
+}
+
+.index-relative
+{
+    position: relative;
+    z-index: 999;
+    background-color: #fff;
+}
+
+#contact .after-style::after
+{
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: 100px;
+    border-bottom: 3px solid #0078ff;
+}
+
+
+.fa-ul
+{
+    margin-left: 1.5rem;
+    line-height: 2rem;
+}
+.fa-fw {
+    text-align: center;
+    width: 1.25em;
+    line-height: 2rem;
+}
+/* </form> */
+
+
+
+/* fotter */
+#fotter
+{
+    background-color: #0062d3;
+}
+.fotter-content > *
+{
+    color: #fff
+}
+/* fotter */
